@@ -1,39 +1,62 @@
-FTSE 100 Time Series Forecasting
-This project investigates the FTSE 100 index by analyzing its historical trend, comparing it with a linear regression fit, forecasting future values using Prophet, and decomposing the series to better understand its components.
-The aim is to build an understanding of how the FTSE 100 behaves over time, identify long-term patterns, and generate a two-year forecast.
+# FTSE 100 Time Series Forecasting
 
-1. Dataset
-- Index: FTSE 100 (UK stock market index)
-- Source: Yahoo Finance
-- Frequency: Monthly closing prices
-- Period Covered: January 2010 – December 2019
+This project analyzes and forecasts the FTSE 100 index to understand its historical behavior, identify long-term patterns, and generate future predictions. The workflow combines exploratory analysis, statistical modeling, and machine learning techniques to compare simple and advanced forecasting approaches.
 
-2. Methodology
-   
-i. Trend Analysis: Visualized the FTSE 100 historical trend over 10 years.
-  
-ii. Linear Regression Comparison:
-- Fitted a linear regression model to compare its predictive power with actual index values.
-- Assessed limitations of linear regression in capturing financial time series dynamics.
-  
-iii. Forecasting with Prophet:
-- Implemented Facebook Prophet to predict the next 2 years of FTSE 100 values.
-- Captured both trend and seasonal components.
-  
-iv. Time Series Decomposition:
-- Decomposed the index into trend, seasonality, and residuals.
-- Highlighted underlying patterns and volatility in the series.
+---
 
-3. Result
+## Dataset
+- **Index**: FTSE 100 (UK stock market index)  
+- **Source**: Yahoo Finance  
+- **Frequency**: Monthly closing prices  
+- **Period Covered**: January 2010 – December 2019  
 
-i. Linear regression captured the overall upward trend but failed to adapt to fluctuations.
+---
 
-ii. Prophet produced more realistic 2-year forecasts with confidence intervals, accounting for both trend and seasonal behavior.
+## Methodology
 
-iii. Decomposition revealed:
-- Trend: Gradual growth over the period.
-- Seasonality: Small recurring fluctuations.
-- Residuals: Unpredictable shocks, reflecting market volatility.
-  
-(Insert figures here: historical trend plot, regression comparison, Prophet forecast, decomposition charts.)
+1. **Trend Analysis**  
+   - Visualized the FTSE 100 over a 10-year period to highlight overall growth and volatility.  
 
+2. **Linear Regression Benchmark**  
+   - Fitted a linear regression line against historical data.  
+   - Compared predictions to actual values to show the limitations of linear models in capturing financial time series dynamics.  
+
+3. **Forecasting with Prophet**  
+   - Implemented **Facebook Prophet** to predict the next 2 years of FTSE 100 values.  
+   - Captured both **trend** and **seasonality** with confidence intervals.  
+
+4. **Time Series Decomposition**  
+   - Decomposed the series into **trend, seasonality, and residuals**.  
+   - Provided insights into underlying growth, recurring patterns, and unpredictable shocks.  
+
+---
+
+## Results
+
+- **Linear Regression**  
+  - Captured the long-term upward trend but failed to reflect short-term fluctuations.  
+
+- **Prophet Forecast**  
+  - Generated realistic 2-year predictions with uncertainty bands.  
+  - Accounted for both trend and seasonal behavior.  
+
+- **Decomposition**  
+  - **Trend**: Gradual growth across the decade.  
+  - **Seasonality**: Small recurring fluctuations.  
+  - **Residuals**: Unexplained volatility, representing market shocks.  
+
+---
+
+## Visuals
+_(to be inserted)_  
+- Historical trend plot  
+- Regression vs. actual comparison  
+- Prophet 2-year forecast  
+- Time series decomposition charts  
+
+---
+
+## Tools & Libraries
+- Python (Pandas, NumPy, Matplotlib, Seaborn)  
+- scikit-learn (Linear Regression)  
+- Facebook Prophet (forecasting)  
