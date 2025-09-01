@@ -47,8 +47,7 @@ This project analyzes and forecasts the FTSE 100 index to understand its histori
 
 ---
 
-## Visuals
-_(to be inserted)_  
+## Visuals 
 - Historical trend plot  
 - Regression vs. actual comparison  
 - Prophet 2-year forecast  
